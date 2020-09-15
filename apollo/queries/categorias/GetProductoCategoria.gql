@@ -1,0 +1,44 @@
+query GetProductoCategoria($slug:String,$page:Int,$number_paginate:Int,$estado:Int){
+  GetProductoCategoria(slug:$slug,page:$page,number_paginate:$number_paginate,estado:$estado) {
+    NroItems
+    data {
+      id
+      nombre
+      slug
+      descripcionCorta
+      descripcionLarga
+      precio_real
+      precio_descuento
+      stok_minimo
+      stok_real
+      foto_real {
+        id
+        url
+      }
+      open_graph {
+        id
+        url
+      }
+      galeria {
+        id
+        url
+      }
+      keywords
+      favoritos
+      estado
+      categoria_producto_id
+      data {
+        id
+        nombre
+        slug
+        estado
+        keywords
+        descripcion
+        created_at
+        updated_at
+      }
+      created_at
+      updated_at
+    }
+  }
+}

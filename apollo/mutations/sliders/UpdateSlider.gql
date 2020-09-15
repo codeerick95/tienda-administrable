@@ -1,0 +1,11 @@
+mutation UpdateSlider($input:sliderInput){
+  UpdateSlider(input:$input){
+    id
+    nombre
+		banner{
+      id
+      url
+    }
+    url
+  }
+}

@@ -1,0 +1,41 @@
+query GetPedidoDirecciones($id_pedido:Int){
+  GetPedidoDirecciones(id_pedido:$id_pedido) {
+    data {
+      id
+      celular
+      direccion
+    }
+    data1 {
+      id
+      ruc
+      razon_social
+    }
+    data2 {
+      id
+      fechaPedido
+      EstadoPedido
+      TipoPago
+      banco
+      nroOperacion
+      TipoEnvio
+      costoEnvio
+      precioTotal
+      voucher
+      direccionEnvio
+      user_id
+    }
+    data3{
+      id
+      typeUser
+      typeDocument
+      numberDocument
+      name
+      fatherSurname
+      motherSurname
+      fecha_nacimiento
+      photo
+      url
+      email
+    }
+  }
+}

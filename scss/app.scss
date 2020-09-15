@@ -1,0 +1,53 @@
+@import "variables";
+@import "mixins";
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import '../node_modules/bootstrap-vue/src/index.scss';
+
+.card {
+  border: none;
+}
+
+body {
+  background-color: #f2f2f2;
+
+  font-family: 'Poppins', sans-serif !important;
+}
+
+button,
+input,
+select {
+  box-shadow: none !important;
+}
+
+label {
+  font-size: .95em;
+  font-weight: 500;
+
+  margin: 0;
+  margin-bottom: .3rem;
+}
+
+th {
+  font-size: .9em;
+  font-weight: normal;
+}
+
+.preview-image {
+  width: 200px;
+  height: 200px;
+
+  margin-top: 1rem;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.medium-text {
+  font-size: .9em;
+}

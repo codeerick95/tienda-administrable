@@ -1,0 +1,11 @@
+query GetSliderID($id:Int){
+  GetSliderID(id:$id){
+    id
+    nombre
+    url
+    banner{
+      id
+      url
+    }
+  }
+}

@@ -1,0 +1,14 @@
+query GetSliders{
+  GetSliders{
+    id
+    nombre
+    banner{
+      id
+      url
+
+    }
+    url
+
+
+  }
+}

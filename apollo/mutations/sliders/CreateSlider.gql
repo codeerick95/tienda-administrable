@@ -1,0 +1,11 @@
+mutation CreateSlider($input:sliderInput!){
+  CreateSlider(input:$input){
+    id
+    nombre
+		banner{
+      id
+      url
+    }
+    url
+  }
+}
